@@ -1,0 +1,20 @@
+<h1> Edit Cheerup </h1>
+
+<%= form_for :cheerup, url: cheerup_path(@cheerup), method: :patch do |f| %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cheerups_path %>
