@@ -1,0 +1,15 @@
+<h1>List of cheerups</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @cheerups.each do |cheerup| %>
+    <tr>
+      <td><%= cheerup.title %></td>
+      <td><%= cheerup.text %></td>
+    </tr>
+  <% end %>
+</table>
