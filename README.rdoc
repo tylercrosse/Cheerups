@@ -1,28 +1,9 @@
-== README
+Read Me
+  User Stories
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  I want the user to be able to create a message that consists of 140 characters.
+  I want the user to be able to save the message.
+  I want the user to have the ability to edit the message.
+  I want the user to have the ability to delete the message.
+  I want the user to be able to comment on the message.
+  I want the user to be able to share the message with a friend.
