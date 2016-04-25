@@ -9,3 +9,4 @@ Wireframe https://gomockingbird.com/projects/dqu7gpc/4gXVnC
   I want the user to have the ability to delete the message.
   I want the user to be able to comment on the message.
   I want the user to be able to share the message with a friend.
+  I want each user to be able to add a picture when they submit a cheerup. 

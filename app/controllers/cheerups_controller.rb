@@ -1,18 +1,26 @@
 class CheerupsController < ApplicationController
+#   validates :title, presence: true,
+#                     length: { minimum: 1, maximum: 140 }
+# end
+
+  def index
+    @cheerups = Cheerup.all
+  end
 
 
   def create
-    @cheerup = Cheerup.new(params[:cheerup])
+    @cheerup = Cheerup.new(cheerup_params)
 
     @cheerup.save
-    redirect_to @cheerup
+    redirect_to cheerups_path
+  end
+
+  def new
+    @cheerup = Cheerup.new
   end
 
   def show
     @cheerup = Cheerup.find(params[:id])
-  end
-
-  def new
   end
 
 

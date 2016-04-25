@@ -1,6 +1,7 @@
 <h1>List of cheerups</h1>
 
 <table>
+<%= link_to 'New cheerup', new_cheerup_path %>
   <tr>
     <th>Title</th>
     <th>Text</th>
@@ -12,4 +13,6 @@
       <td><%= cheerup.text %></td>
     </tr>
   <% end %>
+<%= link_to 'Back', new_cheerup_path %>
+
 </table>
