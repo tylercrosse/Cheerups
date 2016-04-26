@@ -8,4 +8,12 @@
   <%= @cheerup.text %>
 </p>
 
+<h2>Comments</h2>
+<%= render @cheerup.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'form' %>
+
+
 <%= link_to 'Back', cheerups_path %>
+<%= link_to 'Edit', edit_cheerup_path(@cheerup) %>

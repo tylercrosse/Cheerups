@@ -1,6 +1,6 @@
 <p>
   <strong>Commenter:</strong>
-  <%= comment.commenter %>
+  <%= @comment.commenter %>
 </p>
 
 <p>
@@ -9,6 +9,6 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+  <%= link_to 'Destroy Comment', [comment.cheerup, comment],
                method: :delete %>
 </p>
