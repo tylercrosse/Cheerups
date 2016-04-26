@@ -13,12 +13,19 @@
 
 ActiveRecord::Schema.define(version: 20160425183124) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cheerups", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
+    t.text     "body"
+    t.integer  "cheerup_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "cheerups", ["cheerup_id"], name: "index_cheerups_on_cheerup_id", using: :btree
 
   create_table "comments", force: :cascade do |t|
     t.string   "commenter"
@@ -28,6 +35,8 @@ ActiveRecord::Schema.define(version: 20160425183124) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["cheerup_id"], name: "index_comments_on_cheerup_id"
+  add_index "comments", ["cheerup_id"], name: "index_comments_on_cheerup_id", using: :btree
 
+  add_foreign_key "cheerups", "cheerups"
+  add_foreign_key "comments", "cheerups"
 end
