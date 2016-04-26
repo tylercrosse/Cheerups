@@ -7,10 +7,10 @@ class CommentsController < ApplicationController
 
 
   def destroy
-    @cheerup = Cheerup.find(params[:article_id])
+    @cheerup = Cheerup.find(params[:cheerup_id])
     @comment = @cheerup.comments.find(params[:id])
     @comment.destroy
-    redirect_to article_path(@cheerup)
+    redirect_to cheerup_path(@cheerup)
   end
 
   private
