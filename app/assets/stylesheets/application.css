@@ -3,15 +3,40 @@
  *= require social-share-button
  *= require_self
  */
+a {
+  font-size: 20px;
 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
 
 body {
-  position: fixed;
-  top: 50px;
-  left: 380px;
-  padding: 10px;
-  margin: 0px;
+  background-position: center;
+  text-align: center;
+}
+img {
   width: 100%;
-  background-image: url("http://e2ua.com/data/wallpapers/101/WDF_1450625.jpg");
-  background-color: #cccccc;
+  height: 350px;
 }
