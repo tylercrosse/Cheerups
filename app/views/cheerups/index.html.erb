@@ -1,23 +1,24 @@
-<h1>List of cheerups</h1>
+<%= link_to 'Make New Cheerup', new_cheerup_path %>
+<h1>Smile!!!! :)</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <!-- <th>Cheerup</th>
+    <th>Cheerup Content</th> -->
     <th colspan="2"></th>
   </tr>
 
   <% @cheerups.each do |cheerup| %>
-    <tr>
-      <td><%= cheerup.title %></td>
-      <td><%= cheerup.text %></td>
-      <td><%= link_to 'Show', cheerup_path(cheerup) %></td>
-      <td><%= link_to 'Edit', edit_cheerup_path(cheerup) %></td>
-      <td><%= link_to 'Destroy', cheerup_path(cheerup),
+
+      <h1><%= cheerup.title %></h1>
+      <h2><%= cheerup.text %></h2>
+    <nav>
+      <h3><%= link_to 'Rank this Cheerup', cheerup_path(cheerup) %></h3>
+      <h3><%= link_to 'Make this Cheerup more awesome', edit_cheerup_path(cheerup) %></h3>
+      <h3><%= link_to 'Delete this cheerup, it did not cheer me up', cheerup_path(cheerup),
               method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+              data: { confirm: 'Are you sure?' } %></h3>
+    </nav>
     </tr>
 <% end %>
 </table>
-<%= link_to 'Back', new_cheerup_path %>

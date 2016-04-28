@@ -1,14 +1,14 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Cheerup:</strong>
   <%= @cheerup.title %>
 </p>
 
 <p>
-  <strong>Text:</strong>
+  <strong>Cheered up:</strong>
   <%= @cheerup.text %>
 </p>
-
-<h2>Comments</h2>
+<%= social_share_button_tag("Share a cheerup on FB & Twitter") %>
+<h2>Comment on this cheerup</h2>
 <%= render @cheerup.comments %>
 
 <h2>Add a comment:</h2>
@@ -17,3 +17,4 @@
 
 <%= link_to 'Back', cheerups_path %>
 <%= link_to 'Edit', edit_cheerup_path(@cheerup) %>
+<%= social_share_button_tag("Share a cheerup on FB & Twitter") %>

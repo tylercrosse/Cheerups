@@ -14,14 +14,24 @@ body {
   margin: 0px;
   width: 100%;
   background-color: inherit;
+
 }
 
-div {
-    opacity: 0.5;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
-    border-radius: 20px;
-    border: 2px solid #7ddc1f;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-  }
+// div {
+//     opacity: 0.5;
+//     filter: alpha(opacity=40); /* For IE8 and earlier */
+//     border-radius: 20px;
+//     border: 2px solid #7ddc1f;
+//     padding: 20px;
+//     width: 200px;
+//     height: 150px;
+//   }
+
+h1 {
+   color: blue
+
+
+}
+h2 {
+   color: red
+}

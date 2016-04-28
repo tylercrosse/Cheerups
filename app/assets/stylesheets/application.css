@@ -1,3 +1,10 @@
+/*
+ *= require_tree .
+ *= require social-share-button
+ *= require_self
+ */
+
+
 body {
   position: fixed;
   top: 50px;
@@ -5,5 +12,6 @@ body {
   padding: 10px;
   margin: 0px;
   width: 100%;
-  background-color: inherit;
+  background-image: url("http://e2ua.com/data/wallpapers/101/WDF_1450625.jpg");
+  background-color: #cccccc;
 }
