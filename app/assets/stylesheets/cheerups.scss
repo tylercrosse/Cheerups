@@ -1,3 +1,27 @@
 // Place all the styles related to the cheerups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// h1 {
+//   text-align: center;
+// }
+
+body {
+  position: fixed;
+  top: 50px;
+  left: 380px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background-color: inherit;
+}
+
+div {
+    opacity: 0.5;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+    border-radius: 20px;
+    border: 2px solid #7ddc1f;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
