@@ -7,6 +7,16 @@ Rails.application.routes.draw do
   resources :cheerups do
     resources :comments
   end
+
+  # It's usually a best practice to limit routes to only those that have contorller actions with shallow nesting. e.g.
+  # resources :comments only: [:create, :destroy]
+
+  resources :topics do
+    member do
+      post 'upvote'
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

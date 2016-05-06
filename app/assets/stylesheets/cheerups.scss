@@ -2,20 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+h1 {
+   color: blue
+
+}
+h2 {
+   color: red
+}
+
 // h1 {
 //   text-align: center;
 // }
 
-body {
-  position: fixed;
-  top: 50px;
-  left: 380px;
-  padding: 10px;
-  margin: 0px;
-  width: 100%;
-  background-color: inherit;
-
-}
 
 // div {
 //     opacity: 0.5;
@@ -26,12 +25,3 @@ body {
 //     width: 200px;
 //     height: 150px;
 //   }
-
-h1 {
-   color: blue
-
-
-}
-h2 {
-   color: red
-}
